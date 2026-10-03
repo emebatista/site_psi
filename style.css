@@ -630,6 +630,40 @@ nav .nav-ig a::after {
     color: var(--muted);
 }
 
+/* ---------- Empresas ---------- */
+#empresas {
+    padding: 0 0 100px;
+}
+
+.empresas-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 44px 48px;
+    border-radius: var(--radius);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--accent);
+}
+
+.empresas-text {
+    max-width: 720px;
+}
+
+.empresas-box h2 {
+    font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+    margin-bottom: 10px;
+}
+
+.empresas-box p:last-child {
+    color: var(--muted);
+}
+
+.empresas-box .btn {
+    white-space: nowrap;
+}
+
 /* ---------- FAQ ---------- */
 #faq {
     padding: 100px 0;
@@ -992,8 +1026,20 @@ footer {
         padding: 60px 0;
     }
 
-    #cta {
+    #cta, #empresas {
         padding-bottom: 60px;
+    }
+
+    .empresas-box {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 28px 22px;
+        border-left-width: 5px;
+    }
+
+    .empresas-box .btn {
+        justify-content: center;
+        white-space: normal;
     }
 
     .about-grid,
