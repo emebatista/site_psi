@@ -4,51 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psicóloga Clínica | Bruna Fernanda Montalvão da Silva | Pederneiras - SP</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Psicóloga Bruna Fernanda Montalvão da Silva (CRP 06/205498). Psicoterapia com abordagem Cognitivo-Comportamental para crianças, adolescentes, mulheres e mães atípicas. Atendimento presencial em Pederneiras - SP e on-line.">
+    <meta name="theme-color" content="#fdf5e6">
+    <link rel="canonical" href="https://brunafernanda.com.br/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://brunafernanda.com.br/">
+    <meta property="og:site_name" content="Bruna Fernanda | Psicóloga">
+    <meta property="og:title" content="Bruna Fernanda | Psicóloga em Pederneiras e on-line">
+    <meta property="og:description" content="Psicoterapia para crianças, adolescentes, mulheres e mães atípicas. Abordagem Cognitivo-Comportamental. Presencial em Pederneiras - SP e on-line.">
+    <meta property="og:image" content="https://brunafernanda.com.br/assets/images/bruna_hero.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Psychologist",
+      "name": "Bruna Fernanda Montalvão da Silva",
+      "alternateName": "Bruna Fernanda Psicóloga",
+      "url": "https://brunafernanda.com.br/",
+      "image": "https://brunafernanda.com.br/assets/images/bruna_hero.jpg",
+      "telephone": "+55-14-99822-3072",
+      "sameAs": ["https://www.instagram.com/brunafernanda_psi/"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Bernardo Constantino - Residencial Terra Nova",
+        "addressLocality": "Pederneiras",
+        "addressRegion": "SP",
+        "postalCode": "17282-234",
+        "addressCountry": "BR"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": -22.363463, "longitude": -48.772562 },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+      ],
+      "areaServed": ["Pederneiras", "Brasil (on-line)"]
+    }
+    </script>
 </head>
-<body> 
+<body>
     <header id="header">
         <div class="container">
             <div class="logo">
-                <a href="#">
-                    <h1>BRUNA FERNANDA</h1>
-                    <p>PSICÓLOGA</p>
+                <a href="#hero">
+                    <h1>Bruna Fernanda</h1>
+                    <p>Psicóloga</p>
                 </a>
             </div>
-            <nav>
+            <nav id="nav">
                 <ul>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#atuacao">ATUAÇÃO</a></li>
-                    <li><a href="#clinica">CLÍNICA</a></li>
-                    <li><a href="#contato">CONTATO</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#atuacao">Atuação</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="nav-ig"><a href="https://www.instagram.com/brunafernanda_psi/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24"><use href="#i-instagram"/></svg></a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </header>
 
+    <!-- Ícones SVG reutilizáveis -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 3 .3.8.7 1.5 1.4 2.1.6.6 1.3 1.1 2.1 1.4.8.3 1.7.5 3 .6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.8-.3 1.5-.7 2.1-1.4.6-.6 1.1-1.3 1.4-2.1.3-.8.5-1.7.6-3 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6c-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></symbol>
+            <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.3-.6-.4zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 0 1 2.2 12 9.8 9.8 0 0 1 12 2.2 9.8 9.8 0 0 1 21.8 12 9.8 9.8 0 0 1 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12S18.6 0 12 0z"/></symbol>
+            <symbol id="i-ear" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M6 9a6 6 0 0 1 12 0c0 3-2 4-3 6-.7 1.5-.6 4-3 4s-2.5-2-2.5-2M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-1.5 2.2-2 3.5"/></symbol>
+            <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 2.5 4.5 5.5v6c0 4.6 3.2 8.6 7.5 10 4.3-1.4 7.5-5.4 7.5-10v-6L12 2.5z"/><rect x="9" y="10.5" width="6" height="5" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.2 10.5V9.3a1.8 1.8 0 0 1 3.6 0v1.2" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+            <symbol id="i-brain" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15M9.5 3.5A2.5 2.5 0 0 0 7 6a2.8 2.8 0 0 0-2 4.5A3 3 0 0 0 5.5 16a3 3 0 0 0 4 3.5c.8.5 1.7.5 2.5 0a3 3 0 0 0 4-3.5 3 3 0 0 0 .5-5.5A2.8 2.8 0 0 0 17 6a2.5 2.5 0 0 0-2.5-2.5c-1 0-1.7.4-2.5 1.2-.8-.8-1.5-1.2-2.5-1.2z"/></symbol>
+            <symbol id="i-child" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M6 20.5a6 6 0 0 1 12 0M9.5 5.5c.5-1.3 1.4-2 2.5-2s2 .7 2.5 2"/></symbol>
+            <symbol id="i-teen" viewBox="0 0 24 24"><circle cx="12" cy="6.5" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M7 21v-5a5 5 0 0 1 10 0v5M9 21v-4M15 21v-4"/></symbol>
+            <symbol id="i-woman" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M8.5 5.5c-1 2.5-1 5-.5 7M15.5 5.5c1 2.5 1 5 .5 7M6.5 21l1.5-7h8l1.5 7"/></symbol>
+            <symbol id="i-mother" viewBox="0 0 24 24"><circle cx="9" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="11" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3.5 21v-4a5.5 5.5 0 0 1 11 0v4M14 21v-3a3 3 0 0 1 6 0v3"/></symbol>
+            <symbol id="i-family" viewBox="0 0 24 24"><circle cx="7" cy="6.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="6.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="13" r="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M2.5 15.5v-1a4.5 4.5 0 0 1 6-4.2M21.5 15.5v-1a4.5 4.5 0 0 0-6-4.2M8 21.5v-1.5a4 4 0 0 1 8 0v1.5"/></symbol>
+            <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 21.5s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+            <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M8 20.5h8M12 16v4.5"/></symbol>
+            <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M12 7v5l3 2"/></symbol>
+        </defs>
+    </svg>
+
     <section id="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h2>Acolher, entender e cuidar</h2>
-            <h3>com a psicóloga Bruna Fernanda Montalvão da Silva</h3>
-            <a href="#sobre" class="btn">SAIBA MAIS</a>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow">Psicóloga clínica · CRP 06/205498</p>
+                <h2>Acolher, entender<br>e cuidar</h2>
+                <p class="hero-sub">Psicoterapia com abordagem Cognitivo-Comportamental para <strong>crianças, adolescentes, mulheres e mães atípicas</strong>. Presencial em Pederneiras - SP e on-line.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5514998223072?text=Ol%C3%A1%2C%20Bruna!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp</a>
+                    <a href="#sobre" class="btn btn-ghost">Conhecer meu trabalho</a>
+                </div>
+                <ul class="hero-badges">
+                    <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg> Pederneiras - SP</li>
+                    <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-screen"/></svg> Atendimento on-line</li>
+                    <li><svg class="icon" viewBox="0 0 24 24"><use href="#i-clock"/></svg> Seg a sex, 8h às 20h</li>
+                </ul>
+            </div>
+            <div class="hero-photo">
+                <img src="assets/images/bruna_hero.jpg" alt="Psicóloga Bruna Fernanda Montalvão da Silva" width="1066" height="1600" fetchpriority="high">
+            </div>
         </div>
     </section>
 
     <section id="quote">
         <div class="container">
             <blockquote>
-                “Conhecer a si mesmo é o começo de toda sabedoria.”
-                <cite>Aristóteles</cite>
+                “O vínculo, a escuta e o acolhimento são fundamentais para promover mudanças significativas.”
+                <cite>Bruna Fernanda</cite>
             </blockquote>
         </div>
     </section>
@@ -56,17 +130,30 @@
     <section id="sobre">
         <div class="container">
             <div class="about-grid">
-                <div class="about-text">
-                    <h2>Bruna Fernanda Montalvão da Silva</h2>
-                    <h4>Psicóloga Clínica | Terapia Cognitivo-Comportamental</h4>
-                    <p class="crp">CRP 06/205498</p>
-                    <p>Sou psicóloga e atuo na área clínica com uma abordagem acolhedora, ética e individualizada, oferecendo um espaço seguro para que cada pessoa possa compreender suas emoções, enfrentar desafios e desenvolver recursos para uma vida com mais equilíbrio, autonomia e qualidade.</p>
-                    <p>Meu trabalho é direcionado especialmente ao atendimento de <strong>crianças, adolescentes, mulheres adultas e mães atípicas</strong>, além de oferecer <strong>orientação parental</strong>. Busco compreender cada história em sua singularidade, respeitando o momento, as necessidades e os objetivos de cada paciente.</p>
-                    <p>Na psicoterapia, acredito que o vínculo, a escuta e o acolhimento são fundamentais para promover mudanças significativas. Meu compromisso é construir, junto com cada paciente, um processo terapêutico baseado no respeito à sua história, escuta acolhedora, ética, sigilo e desenvolvimento emocional.</p>
-                    <p>Realizo atendimentos presenciais em Pederneiras - SP, em ambiente preparado e acolhedor, e também na modalidade on-line, proporcionando flexibilidade e conforto para que a psicoterapia possa fazer parte da rotina de cada pessoa.</p>
-                </div>
                 <div class="about-image">
-                    <img src="assets/images/bruna_01.jpeg" alt="Bruna Fernanda Montalvão da Silva">
+                    <img src="assets/images/bruna_sobre.jpg" alt="Bruna Fernanda Montalvão da Silva sentada em poltrona verde" width="770" height="1200" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <p class="eyebrow">Sobre mim</p>
+                    <h2>Bruna Fernanda Montalvão da Silva</h2>
+                    <p class="crp">Psicóloga clínica · Terapia Cognitivo-Comportamental · CRP 06/205498</p>
+                    <p>Sou psicóloga e atuo na área clínica com uma abordagem acolhedora, ética e individualizada, oferecendo um espaço seguro para que cada pessoa possa compreender suas emoções, enfrentar desafios e desenvolver recursos para uma vida com mais equilíbrio, autonomia e qualidade.</p>
+                    <p>Busco compreender cada história em sua singularidade, respeitando o momento, as necessidades e os objetivos de cada paciente. Meu compromisso é construir, junto com você, um processo terapêutico baseado no respeito à sua história, ética, sigilo e desenvolvimento emocional.</p>
+
+                    <ul class="pillars">
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#i-ear"/></svg>
+                            <div><strong>Escuta acolhedora</strong><span>Sem julgamentos, no seu tempo.</span></div>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#i-shield"/></svg>
+                            <div><strong>Ética e sigilo</strong><span>Tudo que é dito fica entre nós.</span></div>
+                        </li>
+                        <li>
+                            <svg class="icon" viewBox="0 0 24 24"><use href="#i-brain"/></svg>
+                            <div><strong>Baseado em evidências</strong><span>Terapia Cognitivo-Comportamental.</span></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -74,52 +161,133 @@
 
     <section id="atuacao">
         <div class="container">
-            <h2 class="section-title">MINHA ATUAÇÃO</h2>
-            <p class="section-subtitle">Atendimento psicológico com base na <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, abordagem reconhecida cientificamente que ajuda a identificar e transformar padrões de pensamento, emoção e comportamento. Trabalho voltado às diferentes fases e vivências, com escuta cuidadosa e respeito à história de cada pessoa.</p>
-            
+            <p class="eyebrow center">Minha atuação</p>
+            <h2 class="section-title">Para quem é o atendimento</h2>
+            <p class="section-subtitle">Cada fase da vida traz desafios próprios. Meu trabalho é voltado a estas vivências, com escuta cuidadosa e respeito à história de cada pessoa.</p>
+
             <div class="atuacao-grid">
                 <div class="atuacao-item">
-                    <h3>Terapia Cognitivo-Comportamental</h3>
-                    <p>Abordagem prática e colaborativa: terapeuta e paciente trabalham juntos, com metas claras e ferramentas para lidar com os desafios do dia a dia.</p>
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-child"/></svg>
+                    <h3>Crianças</h3>
+                    <p>Acompanhamento sensível e adaptado a cada fase do desenvolvimento, sempre em parceria com a família.</p>
                 </div>
                 <div class="atuacao-item">
-                    <h3>Psicoterapia para crianças</h3>
-                    <p>Acompanhamento sensível e adaptado a cada fase do desenvolvimento, em parceria com a família.</p>
-                </div>
-                <div class="atuacao-item">
-                    <h3>Psicoterapia para adolescentes</h3>
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-teen"/></svg>
+                    <h3>Adolescentes</h3>
                     <p>Um espaço de escuta e confiança para atravessar as mudanças, dúvidas e desafios dessa fase.</p>
                 </div>
                 <div class="atuacao-item">
-                    <h3>Psicoterapia para mulheres adultas</h3>
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-woman"/></svg>
+                    <h3>Mulheres adultas</h3>
                     <p>Cuidado com a saúde emocional, as relações e as múltiplas demandas da vida adulta.</p>
                 </div>
                 <div class="atuacao-item">
-                    <h3>Mães atípicas</h3>
-                    <p>Atendimento e acolhimento para mães de crianças com deficiência, transtornos ou necessidades específicas.</p>
-                </div>
-                <div class="atuacao-item">
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-family"/></svg>
                     <h3>Orientação parental</h3>
                     <p>Apoio a pais e cuidadores na compreensão e no manejo dos desafios da criação dos filhos.</p>
                 </div>
-                <div class="atuacao-item">
-                    <h3>Atendimento presencial e on-line</h3>
-                    <p>Sessões em consultório em Pederneiras - SP ou a distância, com a mesma qualidade e sigilo.</p>
+            </div>
+
+            <div class="highlight">
+                <div class="highlight-icon"><svg class="icon" viewBox="0 0 24 24"><use href="#i-mother"/></svg></div>
+                <div class="highlight-text">
+                    <h3>Acolhimento de mães atípicas</h3>
+                    <p>Ser mãe de uma criança com deficiência, transtorno do neurodesenvolvimento ou necessidades específicas traz uma rotina intensa e, muitas vezes, solitária. Aqui há um espaço para cuidar de quem cuida: acolher o cansaço, a culpa, o luto das expectativas e fortalecer recursos para seguir com mais leveza.</p>
                 </div>
-                <div class="atuacao-item">
-                    <h3>Recursos emocionais</h3>
-                    <p>Desenvolvimento e fortalecimento de recursos para lidar com as emoções e os desafios do dia a dia.</p>
+            </div>
+
+            <div class="approach">
+                <div class="approach-text">
+                    <p class="eyebrow">Como trabalho</p>
+                    <h3>Terapia Cognitivo-Comportamental (TCC)</h3>
+                    <p>Abordagem reconhecida cientificamente, que ajuda a identificar e transformar padrões de pensamento, emoção e comportamento que causam sofrimento.</p>
+                    <p>Na TCC, terapeuta e paciente trabalham em colaboração: você tem voz ativa na definição dos temas e das metas. O objetivo é que você desenvolva autonomia e ferramentas reais para lidar com os desafios do dia a dia.</p>
+                </div>
+                <div class="approach-photo">
+                    <img src="assets/images/bruna_jaleco.jpg" alt="Bruna Fernanda de jaleco" width="1066" height="1600" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="clinica">
+    <section id="como-funciona">
         <div class="container">
-            <h2 class="section-title">CLÍNICA</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="assets/images/clinica_01.jpeg" alt="Clínica 1"></div>
+            <p class="eyebrow center">Primeiros passos</p>
+            <h2 class="section-title">Como funciona</h2>
+            <p class="section-subtitle">Começar terapia pode gerar dúvidas. O caminho é simples.</p>
+
+            <ol class="steps">
+                <li>
+                    <span class="step-num">1</span>
+                    <h3>Entre em contato</h3>
+                    <p>Mande uma mensagem pelo WhatsApp. Tiro suas dúvidas sobre horários, valores e modalidade.</p>
+                </li>
+                <li>
+                    <span class="step-num">2</span>
+                    <h3>Primeira conversa</h3>
+                    <p>Na primeira sessão, conhecemos sua história e o que te trouxe até aqui. No caso de crianças e adolescentes, a conversa inicial é com os responsáveis.</p>
+                </li>
+                <li>
+                    <span class="step-num">3</span>
+                    <h3>Acompanhamento</h3>
+                    <p>Sessões semanais de cerca de 50 minutos, com metas definidas juntos e ajustadas ao longo do processo.</p>
+                </li>
+            </ol>
+
+            <div class="modalidades">
+                <div class="modalidade">
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-pin"/></svg>
+                    <div>
+                        <h4>Presencial em Pederneiras</h4>
+                        <p>Consultório preparado e acolhedor, no Residencial Terra Nova.</p>
+                    </div>
+                </div>
+                <div class="modalidade">
+                    <svg class="icon" viewBox="0 0 24 24"><use href="#i-screen"/></svg>
+                    <div>
+                        <h4>On-line, para onde você estiver</h4>
+                        <p>Por videochamada, com a mesma qualidade e sigilo do presencial.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <section id="faq">
+        <div class="container narrow">
+            <p class="eyebrow center">Dúvidas frequentes</p>
+            <h2 class="section-title">Perguntas que costumo receber</h2>
+
+            <details>
+                <summary>Terapia on-line funciona tão bem quanto presencial?</summary>
+                <p>Sim. Estudos mostram resultados equivalentes para a maioria das demandas. O que importa é um ambiente tranquilo, com privacidade e boa conexão. Para crianças pequenas, o presencial costuma ser mais indicado.</p>
+            </details>
+            <details>
+                <summary>Como funciona o atendimento de crianças e adolescentes?</summary>
+                <p>A primeira conversa é com os responsáveis, para entender a história e a queixa. Depois, as sessões são com a criança ou o adolescente, usando recursos adequados à idade. Os pais participam de encontros periódicos de orientação.</p>
+            </details>
+            <details>
+                <summary>Quanto tempo dura o processo?</summary>
+                <p>Varia conforme a demanda e os objetivos de cada pessoa. A TCC é uma abordagem focada e estruturada, e muitos processos têm duração definida. Isso é conversado desde o início e revisado ao longo do caminho.</p>
+            </details>
+            <details>
+                <summary>O que é dito na sessão é sigiloso?</summary>
+                <p>Totalmente. O sigilo é um dever ético da psicóloga, garantido pelo Código de Ética Profissional. Com crianças e adolescentes, os responsáveis recebem orientações gerais, mas o conteúdo das sessões é preservado.</p>
+            </details>
+            <details>
+                <summary>Qual o valor e as formas de pagamento?</summary>
+                <p>Valores, pacotes e formas de pagamento são informados diretamente pelo WhatsApp. Mande uma mensagem sem compromisso.</p>
+            </details>
+        </div>
+    </section>
+
+    <section id="cta">
+        <div class="container cta-box">
+            <div>
+                <h2>Vamos conversar?</h2>
+                <p>O primeiro passo é uma mensagem. Respondo com horários e todas as informações que você precisar.</p>
+            </div>
+            <a href="https://wa.me/5514998223072?text=Ol%C3%A1%2C%20Bruna!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary btn-lg"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> Agendar pelo WhatsApp</a>
         </div>
     </section>
 
@@ -127,23 +295,34 @@
         <div class="container">
             <div class="contato-grid">
                 <div class="contato-info">
-                    <h2>Como Posso Ajudar?</h2>
+                    <p class="eyebrow">Contato</p>
+                    <h2>Onde me encontrar</h2>
                     <div class="info-item">
-                        <h3>CONTATO</h3>
-                        <p>Whatsapp: (14) 99822-3072</p>
-                        <p><a href="https://www.instagram.com/brunafernandapsi/" target="_blank" rel="noopener" class="ig-link"><svg class="ig-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2M12 0C8.7 0 8.3 0 7.1.1 5.8.1 4.9.3 4.1.6c-.8.3-1.5.7-2.1 1.4C1.3 2.6.9 3.3.6 4.1.3 4.9.1 5.8.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.1 1.3.3 2.2.6 3 .3.8.7 1.5 1.4 2.1.6.6 1.3 1.1 2.1 1.4.8.3 1.7.5 3 .6 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c1.3-.1 2.2-.3 3-.6.8-.3 1.5-.7 2.1-1.4.6-.6 1.1-1.3 1.4-2.1.3-.8.5-1.7.6-3 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.1-1.3-.3-2.2-.6-3-.3-.8-.7-1.5-1.4-2.1C21.4 1.3 20.7.9 19.9.6c-.8-.3-1.7-.5-3-.6C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg> @brunafernandapsi</a></p>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/5514998223072" target="_blank" rel="noopener">(14) 99822-3072</a></p>
                     </div>
                     <div class="info-item">
-                        <h3>ENDEREÇO</h3>
-                        <p>R. Bernardo Constantino - Residencial Terra Nova, Pederneiras - SP, 17282-234</p>
+                        <h3>Instagram</h3>
+                        <p><a href="https://www.instagram.com/brunafernanda_psi/" target="_blank" rel="noopener" class="ig-link"><svg class="icon" viewBox="0 0 24 24"><use href="#i-instagram"/></svg> @brunafernanda_psi</a></p>
                     </div>
-                    <a href="https://wa.me/5514998223072" target="_blank" class="btn-whatsapp">AGENDAR ATENDIMENTO</a>
+                    <div class="info-item">
+                        <h3>Endereço</h3>
+                        <p>R. Bernardo Constantino - Residencial Terra Nova<br>Pederneiras - SP, 17282-234</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Horário</h3>
+                        <p>Segunda a sexta-feira, das 8h00 às 20h00<br>Sábado, das 8h00 às 13h00</p>
+                    </div>
+                    <div class="contact-actions">
+                        <a href="https://wa.me/5514998223072?text=Ol%C3%A1%2C%20Bruna!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener" class="btn btn-primary"><svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> Chamar no WhatsApp</a>
+                        <a href="https://ig.me/m/brunafernanda_psi" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="icon" viewBox="0 0 24 24"><use href="#i-instagram"/></svg> Mensagem no Instagram</a>
+                    </div>
                 </div>
                 <div class="contato-map">
                     <iframe
                         src="https://www.google.com/maps?q=-22.363463,-48.772562&z=16&output=embed"
                         width="100%"
-                        height="400"
+                        height="100%"
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
@@ -159,25 +338,22 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p>Horário de Funcionamento:</p>
-                    <p>Segunda a sexta-feira das 8h00 às 20h00</p>
-                    <p>Sábado das 8h00 às 13h00</p>
+                    <p class="footer-brand">Bruna Fernanda · Psicóloga</p>
+                    <p>Responsável técnica: Bruna Fernanda Montalvão da Silva · CRP 06/205498</p>
                 </div>
                 <div class="footer-right">
                     <p>&copy; 2026 Bruna Fernanda Montalvão da Silva</p>
-                    <p>Responsável Técnica: Bruna Fernanda Montalvão da Silva - CRP 06/205498</p>
                     <div class="legal-links">
-                        <a href="https://www.instagram.com/brunafernandapsi/" target="_blank" rel="noopener">Instagram</a>
-                        <a href="#">Termos e Condições</a>
-                        <a href="#">Política de Privacidade</a>
+                        <a href="https://www.instagram.com/brunafernanda_psi/" target="_blank" rel="noopener">Instagram</a>
+                        <a href="privacidade.html">Política de Privacidade</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5514998223072" class="whatsapp-float" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <a href="https://wa.me/5514998223072?text=Ol%C3%A1%2C%20Bruna!%20Gostaria%20de%20agendar%20uma%20consulta." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <svg class="icon" viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg>
     </a>
 
     <script src="script.js"></script>
