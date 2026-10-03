@@ -656,51 +656,55 @@ nav .nav-ig a::after {
     margin-bottom: 10px;
 }
 
-.empresas-text > p {
+.empresas-box p:last-child {
     color: var(--muted);
-}
-
-.empresas-text > .empresas-tests-title {
-    margin-top: 22px;
-    margin-bottom: 12px;
-    font-weight: 700;
-    color: var(--text);
-}
-
-.empresas-tests {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-}
-
-.empresas-tests li {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    padding: 12px 16px;
-    border-radius: 10px;
-    background: var(--accent-soft);
-}
-
-.empresas-tests strong {
-    color: var(--accent-dark);
-}
-
-.empresas-tests span {
-    font-size: 0.92rem;
-    color: var(--muted);
-}
-
-.empresas-text > .empresas-tests-note {
-    margin-top: 12px;
-    font-size: 0.85rem;
 }
 
 .empresas-box .btn {
     white-space: nowrap;
+}
+
+/* ---------- TESTES ---------- */
+#testes {
+    padding: 0 0 100px;
+}
+
+.testes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.teste-item {
+    background-color: var(--white);
+    padding: 30px 26px;
+    border-radius: var(--radius);
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--accent);
+}
+
+.teste-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+
+.teste-item .teste-nome {
+    font-weight: 700;
+    color: var(--accent-dark);
+    margin-bottom: 10px;
+}
+
+.teste-item p {
+    font-size: 0.95rem;
+    color: var(--muted);
+}
+
+.testes-note {
+    max-width: 680px;
+    margin: 28px auto 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
 }
 
 /* ---------- FAQ ---------- */
@@ -950,7 +954,8 @@ footer {
    Responsivo
    ========================================================== */
 @media (max-width: 1024px) {
-    .atuacao-grid {
+    .atuacao-grid,
+    .testes-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1065,7 +1070,7 @@ footer {
         padding: 60px 0;
     }
 
-    #cta, #empresas {
+    #cta, #empresas, #testes {
         padding-bottom: 60px;
     }
 
@@ -1074,10 +1079,6 @@ footer {
         align-items: stretch;
         padding: 28px 22px;
         border-left-width: 5px;
-    }
-
-    .empresas-tests {
-        grid-template-columns: 1fr;
     }
 
     .empresas-box .btn {
@@ -1107,7 +1108,8 @@ footer {
         gap: 14px;
     }
 
-    .atuacao-grid {
+    .atuacao-grid,
+    .testes-grid {
         grid-template-columns: 1fr;
         gap: 16px;
     }
