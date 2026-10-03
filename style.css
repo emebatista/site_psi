@@ -426,7 +426,7 @@ footer {
         display: flex;
     }
 
-    .about-grid, .contato-grid {
+    .about-grid, .contato-grid, .forma-grid {
         grid-template-columns: 1fr;
     }
 
@@ -437,4 +437,35 @@ footer {
     .hero-content h3 {
         font-size: 1.2rem;
     }
+}
+
+/* Minha forma de trabalhar */
+#forma {
+    padding: 100px 0;
+}
+
+.forma-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.forma-image img {
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.forma-text {
+    font-size: 1.1rem;
+}
+
+.forma-text p {
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
