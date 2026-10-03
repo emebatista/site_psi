@@ -469,3 +469,26 @@ footer {
     margin-bottom: 20px;
     line-height: 1.8;
 }
+
+/* Mobile: menos espaço entre seções */
+@media (max-width: 768px) {
+    #sobre, #atuacao, #forma, #clinica, #contato {
+        padding: 50px 0;
+    }
+
+    .about-grid, .forma-grid {
+        gap: 30px;
+    }
+
+    .about-image {
+        margin-right: 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        margin-bottom: 30px;
+    }
+}
